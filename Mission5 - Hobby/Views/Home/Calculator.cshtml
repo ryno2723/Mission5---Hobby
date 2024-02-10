@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this calculator to get a quote for how much I would charge to tutor you about performing!</p>
+
+
+<label>Enter the number of hours of tutoring you would like:</label>
+<input type="number" id="hours" step="1" min="1" required oninput="validity.valid||(value='');" />
+<br />
+<label>Hourly Rate:</label>
+<input type="text" id="hourlyRate" value="45" readonly></input>
+<br />
+<br />
+<button id="calcTotal">Calculate Total</button>
+<br>
+<div id="calcOutput">Total: </div>
+<script src="~/js/site.js" asp-append-version="true"></script>
